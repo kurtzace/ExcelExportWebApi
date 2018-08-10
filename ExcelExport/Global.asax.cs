@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExcelExport.Services;
+using FluentScheduler;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +20,8 @@ namespace ExcelExport
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            JobManager.Initialize(new JobRegistry());
+
         }
     }
 }

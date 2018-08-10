@@ -194,6 +194,7 @@
     <Compile Include="Models\Repository\RecordRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IRecordTransform.cs" />
+    <Compile Include="Services\JobRegistry.cs" />
     <Compile Include="Services\RecordTransform.cs" />
     <Compile Include="Util\Html.cs" />
   </ItemGroup>
